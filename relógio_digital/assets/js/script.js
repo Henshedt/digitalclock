@@ -1,6 +1,6 @@
-const hour = document.getElementsById('hour');
-const minutes = document.getElementsById('minutes');
-const seconds = document.getElementsById('seconds');
+const horas = document.getElementById('horas');
+const minutos = document.getElementById('minutos');
+const segundos = document.getElementById('segundos');
 
 const relogio = setInterval(function time() {
 
@@ -9,7 +9,7 @@ const relogio = setInterval(function time() {
     let min = dateToday.getMinutes();
     let s = dateToday.getSeconds();
 
-    hour.textContent = hr;
-    minutes.textContent = min;
-    seconds.textContent = s;
+    horas.textContent = hr;
+    minutos.textContent = min;
+    segundos.textContent = s;
 })
